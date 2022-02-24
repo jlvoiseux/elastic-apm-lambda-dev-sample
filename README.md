@@ -8,6 +8,7 @@
 - [Setup](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) your credentials.
 - [Clone](https://github.com/elastic/apm-aws-lambda) the repository containing the code of the Elastic APM Extension for AWS Lambda.
 - Create an empty Lambda function with the name of your choice in AWS.
+- [Set](https://www.elastic.co/guide/en/apm/guide/current/aws-lambda-extension.html#aws-lambda-configure-env) the environment variables required by the extension.
 - In `deploy.sh`, set the following environment variables:
 ```
 EXTENSION_PATH=<Path to extension codebase>
