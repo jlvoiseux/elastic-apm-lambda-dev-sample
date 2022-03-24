@@ -14,7 +14,7 @@ rm -f deployment-package.zip
 zip -qq -r deployment-package.zip .
 
 # Update Lambda function. The function should be already created in the Web UI with the name LAMBDA_NAME
-aws lambda update-function-code --function-name $LAMBDA_NAME --region $AWS_REGION --zip-file fileb://deployment-package.zip
+aws lambda update-function-code --function-name $LAMBDA_NAME --region $AWS_REGION --zip-file fileb://deployment-package.zip >/dev/null
 
 # Prepare the extension package
 cd $EXTENSION_PATH
